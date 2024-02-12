@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import Container from "./Container";
 import Linkbtn from "./ui/Linkbtn";
@@ -6,11 +7,16 @@ type Props = {};
 
 const Navbar = (props: Props) => {
   return (
-    <header className="w-full bg-sky-900">
+    <header className="w-full -mb-16 z-50 relative">
       <Container>
         <nav className="w-full h-16 flex justify-between items-center">
-          <Link href={"/"}>Logo</Link>
-          <ul className="flex gap-3">
+          <Link href={"/"}>
+            <Image src="/assist-xpert-logo.svg" width={64} height={20} alt="" />
+          </Link>
+          <ul className="flex gap-8">
+            <li className="">
+              <Link href={"/"}>Home</Link>
+            </li>
             <li className="">
               <Link href={"/about"}>About</Link>
             </li>

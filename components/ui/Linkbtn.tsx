@@ -9,7 +9,7 @@ const Linkbtn = ({ href, children }: Props) => {
   return (
     <Link
       href={href}
-      className="px-10 py-3 bg-sky-500 text-white rounded-full font-semibold"
+      className="px-10 py-3 transition bg-primary hover:bg-[#0089CA] text-white rounded-md font-semibold inline-block"
     >
       {children}
     </Link>

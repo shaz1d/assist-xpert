@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
@@ -18,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body
+        className={cn("min-h-screen bg-secondary text-white", roboto.className)}
+      >
         <Navbar />
         {children}
       </body>

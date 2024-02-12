@@ -3,9 +3,7 @@ import Link from "next/link";
 import Container from "./Container";
 import Linkbtn from "./ui/Linkbtn";
 
-type Props = {};
-
-const Navbar = (props: Props) => {
+const Navbar = () => {
   return (
     <header className="w-full -mb-16 z-50 relative">
       <Container>
@@ -33,5 +31,13 @@ const Navbar = (props: Props) => {
     </header>
   );
 };
+
+const NavItem = ()=>{
+  return (
+    <li className="">
+              <Link href={"/contact"}>Contact</Link>
+            </li>
+  )
+}
 
 export default Navbar;

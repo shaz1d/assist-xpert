@@ -1,6 +1,6 @@
 "use client";
 
-import { docsConfig } from "@/config/docs";
+import { siteConfig } from "@/config/docs";
 import { cn } from "@/lib/utils";
 import { AlignLeft } from "lucide-react";
 import Image from "next/image";
@@ -27,11 +27,13 @@ const Navbar = () => {
             "absolute flex flex-col px-7 py-4 rounded-md top-full md:opacity-100 transition-all  md:flex-row md:static gap-3 md:gap-10"
           )}
         >
-          {docsConfig.mainNav.map((item, index) => {
+          {siteConfig.mainNav.map((item, index) => {
             return (
               <li key={index}>
                 <Link
-                  className={cn(pathname === item.path ? "text-white" : "text")}
+                  className={cn(
+                    pathname === item.path ? "text-white" : "text-white/60"
+                  )}
                   href={item.path}
                 >
                   {item.name}

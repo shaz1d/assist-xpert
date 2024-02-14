@@ -1,3 +1,4 @@
+import { ArrowRightIcon } from "lucide-react";
 import Link from "next/link";
 
 type Props = {
@@ -9,9 +10,10 @@ const Linkbtn = ({ href, children }: Props) => {
   return (
     <Link
       href={href}
-      className="px-10 py-3 transition bg-primary hover:bg-[#0089CA] text-white rounded-md font-semibold inline-block"
+      className="pl-8 pr-5 py-3  transition bg-primary hover:bg-[#0089CA] hover:-translate-y-1 text-white rounded-md font-semibold inline-flex items-center gap-1"
     >
       {children}
+      <ArrowRightIcon size={18} />
     </Link>
   );
 };

@@ -2,11 +2,6 @@
   "name": "assist-xpert",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=10.3.0",
-    "yarn": "Please use npm"
-  },
   "scripts": {
     "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",

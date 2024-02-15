@@ -46,7 +46,7 @@ export const siteConfig: SiteConfig = {
     marketing: {
       title: "Marketing",
       description:
-        "We are a digital agency that helps businesses grow faster and more effectively.",
+        "We are a digital agency that helps businesses grow faster and more effectively. We are a digital agency that helps businesses grow faster and more effectively.Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
       path: "/services/marketing",
     },
     assistance: {

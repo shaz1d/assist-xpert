@@ -24,10 +24,7 @@ export const siteConfig: SiteConfig = {
       name: "Services",
       path: "/services",
     },
-    {
-      name: "Blog",
-      path: "/blog",
-    },
+
     {
       name: "Contact",
       path: "/contact",

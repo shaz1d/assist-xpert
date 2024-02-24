@@ -41,6 +41,7 @@ const Navbar = () => {
               <li key={index}>
                 <Link
                   className={cn(
+                    "hover:text-white transition duration-200 uppercase tracking-wider",
                     pathname === item.path ? "text-white" : "text-white/60"
                   )}
                   href={item.path}

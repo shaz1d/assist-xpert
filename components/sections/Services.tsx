@@ -6,7 +6,7 @@ const Services = () => {
   return (
     <section className="section">
       <div className="container">
-        <div className="flex gap-5 items-center w-full">
+        <div className="flex flex-col md:flex-row gap-5 items-center w-full">
           <div>
             <h2 className="text-5xl font-bold">Services We Provide</h2>
             <p className="max-w-3xl mt-1">

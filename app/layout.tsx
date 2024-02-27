@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import { cn } from "@/lib/utils";
+import "boxicons/css/boxicons.min.css";
 import type { Metadata } from "next";
 import { Inter, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
@@ -19,12 +20,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <script
-          src="https://kit.fontawesome.com/69d8bdbea4.js"
-          crossorigin="anonymous"
-        ></script>
-      </head>
       <body
         className={cn("min-h-screen bg-secondary text-white", roboto.className)}
       >

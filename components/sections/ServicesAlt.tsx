@@ -1,15 +1,16 @@
-import { BanknoteIcon, HeadsetIcon, Share2Icon } from "lucide-react";
 const ServicesAlt = () => {
   return (
     <section className="section">
       <div className="grid grid-cols-1 md:grid-cols-3">
         <a
           href="#"
-          className="block bg-[url('/assistant.avif')] bg-cover bg-center p-8 py-20 relative group text-blue-950 hover:text-blue-100 duration-200"
+          className="block bg-[url('/assistant.avif')] bg-cover bg-center px-12 py-28 relative group text-blue-950 hover:text-blue-100 duration-200"
         >
           <div className=" absolute inset-0 bg-sky-200  transition-all duration-200 group-hover:bg-sky-900/85"></div>
           <div className="relative flex flex-col space-y-3">
-            <HeadsetIcon size={40} className="mb-8" />
+            <div className="mb-8 text-5xl">
+              <i className="bx bx-headphone"></i>
+            </div>
             <h2 className=" text-4xl tracking-widest">
               Virtual Assistant Service
             </h2>
@@ -23,11 +24,13 @@ const ServicesAlt = () => {
 
         <a
           href="#"
-          className="block bg-[url('/assistant.avif')] bg-cover bg-center p-8 py-20 relative group text-blue-950 hover:text-blue-100 duration-200"
+          className="block bg-[url('/assistant.avif')] bg-cover bg-center px-12 py-28 relative group text-blue-950 hover:text-blue-100 duration-200"
         >
           <div className=" absolute inset-0 bg-sky-200  transition-all duration-200 group-hover:bg-sky-900/85"></div>
           <div className="relative flex flex-col space-y-3">
-            <BanknoteIcon size={40} className="mb-8" />
+            <div className="mb-8 text-5xl">
+              <i className="bx bx-money"></i>
+            </div>
             <h2 className=" text-4xl tracking-widest">
               Accounting Professionals
             </h2>
@@ -42,11 +45,13 @@ const ServicesAlt = () => {
 
         <a
           href="#"
-          className="block bg-[url('/assistant.avif')] bg-cover bg-center p-8 py-20 relative group text-blue-950 hover:text-blue-100 duration-200"
+          className="block bg-[url('/assistant.avif')] bg-cover bg-center px-12 py-28 relative group text-blue-950 hover:text-blue-100 duration-200"
         >
           <div className=" absolute inset-0 bg-sky-200  transition-all duration-200 group-hover:bg-sky-900/85"></div>
           <div className="relative flex flex-col space-y-3">
-            <Share2Icon size={40} className="mb-8" />
+            <div className="mb-8 text-5xl">
+              <i className="bx bx-share-alt"></i>
+            </div>
             <h2 className=" text-4xl tracking-widest">Social Media Managers</h2>
             <p className="tracking-widest text-slate-500 group-hover:text-slate-300 leading-7">
               Say goodbye to the daily “what should we post” worry with BELAY

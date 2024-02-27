@@ -19,6 +19,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          src="https://kit.fontawesome.com/69d8bdbea4.js"
+          crossorigin="anonymous"
+        ></script>
+      </head>
       <body
         className={cn("min-h-screen bg-secondary text-white", roboto.className)}
       >

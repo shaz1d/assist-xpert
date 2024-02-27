@@ -1,4 +1,4 @@
-import { NavItem, Service } from "@/types";
+import { NavItem, Service, Steps } from "@/types";
 
 type SiteConfig = {
   mainNav: NavItem[];
@@ -10,6 +10,7 @@ type SiteConfig = {
     marketing: Service;
     assistance: Service;
   };
+  howItWorks: Steps[];
 };
 
 export const siteConfig: SiteConfig = {
@@ -112,4 +113,48 @@ export const siteConfig: SiteConfig = {
       path: "/services/assistance",
     },
   },
+
+  howItWorks: [
+    {
+      icon: "fa-solid fa-phone-volume",
+      step: "Step 1. Sales Call",
+      description:
+        "Meet with your Solutions Consultant to identify your exact needs and pain points and determine the right hire for you. If BELAY is a good fit, we’ll send you an agreement to sign, and you’ll be paired with a Client Success Consultant.",
+    },
+
+    {
+      icon: "fa-solid fa-magnifying-glass",
+      step: "Step 2. Discovery Call",
+      description:
+        "Meet with your Client Success Consultant to deep dive into your tasks, tools, culture, and personality requirements to ensure we match you with the right specialist.",
+    },
+
+    {
+      icon: "fa-solid fa-users",
+      step: "Step 3. Placement Process",
+      description:
+        "Now for our Secret Sauce: Your Client Success Consultant will vet and interview top candidates from our bench of nearly 2,000 U.S.-based Specialists. They’ll select the best match for you—in an average of just one week.",
+    },
+
+    {
+      icon: "fa-solid fa-chalkboard-user",
+      step: "Step 4. Kickoff Call",
+      description:
+        "You, your Client Success Consultant, and your new teammate will have a kickoff call—the official start to your partnership—to meet each other, set initial goals, discuss communication plans, and set yourselves up for success.",
+    },
+
+    {
+      icon: "fa-solid fa-handshake",
+      step: "Step 5. Onboarding",
+      description:
+        "Your Client Success Consultant stays close to provide our signature exceptional service and guide you through our proven onboarding process",
+    },
+
+    {
+      icon: "fa-solid fa-user-check",
+      step: "Step 6. Nurturing",
+      description:
+        "You will have ongoing check-ins to support both you and your BELAY Specialist throughout your partnership with BELAY.",
+    },
+  ],
 };

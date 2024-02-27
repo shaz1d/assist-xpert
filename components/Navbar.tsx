@@ -69,7 +69,58 @@ const Navbar = () => {
           "fixed bg-gray-300 min-h-screen w-full top-0 z-10 transition duration-500 pt-16"
         )}
       >
-        <div className="container">Hello</div>
+        <div className="container">
+          <div className="grid grid-cols-1 md:grid-cols-2 mt-20">
+            <ul className=" flex flex-col">
+              {siteConfig.subNav.map((item, index) => {
+                return (
+                  <li key={index} className="group">
+                    <Link
+                      className={cn(
+                        "hover:text-white text-3xl inline-block transition text-gray-100 duration-200 uppercase py-4 tracking-wider relative",
+                        pathname === item.path ? "text-white" : ""
+                      )}
+                      href={item.path}
+                    >
+                      <span className=" bg-white absolute w-0 h-[2px] bottom-1 group-hover:w-full transition-all duration-300"></span>
+                      {item.name}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
+
+            <div className=" space-y-6">
+              <div className="font-extralight space-y-4">
+                <h2 className=" text-3xl">
+                  The Right Hire. <br /> Right Now.
+                </h2>
+                <p className=" font-extralight">
+                  Everything you need to transform your work.
+                </p>
+              </div>
+
+              <ul>
+                {siteConfig.subSubNav.map((item, index) => {
+                  return (
+                    <li key={index} className="group">
+                      <Link
+                        className={cn(
+                          "hover:text-white font-semibold tracking-widest inline-block transition text-gray-100 duration-200 uppercase py-1 relative",
+                          pathname === item.path ? "text-white" : ""
+                        )}
+                        href={item.path}
+                      >
+                        <span className=" bg-white absolute w-0 h-[2px] bottom-0 group-hover:w-full transition-all duration-300"></span>
+                        {item.name}
+                      </Link>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
   );

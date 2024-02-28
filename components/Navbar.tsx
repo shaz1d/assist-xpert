@@ -35,7 +35,7 @@ const Navbar = () => {
         <Link href={"/"}>
           <Image src="/assist-xpert-logo.svg" width={64} height={20} alt="" />
         </Link>
-        <ul className="flex md:flex-row gap-3 md:gap-10">
+        <ul className="hidden md:flex md:flex-row gap-3 md:gap-10">
           {siteConfig.mainNav.map((item, index) => {
             return (
               <li key={index}>

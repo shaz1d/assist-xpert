@@ -1,4 +1,5 @@
 import { siteConfig } from "@/config/docs";
+import PrimaryButton from "../ui/PrimaryButton";
 
 const HowItWorks = () => {
   const steps = siteConfig.howItWorks;
@@ -29,9 +30,7 @@ const HowItWorks = () => {
           })}
         </div>
         <div className=" flex justify-center">
-          <button className=" px-12 py-3 rounded-md border-2 border-gray-100 uppercase transition-all duration-200 hover:shadow-xl hover:shadow-gray-400/20">
-            Lets Connect
-          </button>
+          <PrimaryButton href="/hire">Lets Connect</PrimaryButton>
         </div>
       </div>
     </section>

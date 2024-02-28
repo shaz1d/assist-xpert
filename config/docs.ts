@@ -1,4 +1,4 @@
-import { NavItem, Service, Steps } from "@/types";
+import { Achivements, NavItem, Service, Steps } from "@/types";
 
 type SiteConfig = {
   mainNav: NavItem[];
@@ -11,6 +11,7 @@ type SiteConfig = {
     assistance: Service;
   };
   howItWorks: Steps[];
+  achivements: Achivements[];
 };
 
 export const siteConfig: SiteConfig = {
@@ -155,6 +156,28 @@ export const siteConfig: SiteConfig = {
       step: "Step 6. Nurturing",
       description:
         "You will have ongoing check-ins to support both you and your BELAY Specialist throughout your partnership with BELAY.",
+    },
+  ],
+
+  achivements: [
+    {
+      title: "10000+",
+      text: "Happy clients served",
+    },
+
+    {
+      title: "1 Week",
+      text: "Average time for placement",
+    },
+
+    {
+      title: "93%",
+      text: "First match success rate",
+    },
+
+    {
+      title: "1800",
+      text: "Contractors at the ready",
     },
   ],
 };

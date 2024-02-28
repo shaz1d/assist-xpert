@@ -1,3 +1,5 @@
+import Achivements from "@/components/sections/Achivements";
+import BannerCta from "@/components/sections/BannerCta";
 import Hero from "@/components/sections/Hero";
 import HowItWorks from "@/components/sections/HowItWorks";
 import Services from "@/components/sections/Services";
@@ -10,6 +12,8 @@ export default function Home() {
       <Services></Services>
       <ServicesAlt />
       <HowItWorks />
+      <Achivements />
+      <BannerCta />
     </main>
   );
 }

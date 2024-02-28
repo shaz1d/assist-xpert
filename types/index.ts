@@ -21,3 +21,8 @@ export type Steps = {
   step: string;
   description: string;
 };
+
+export type Achivements = {
+  title: string;
+  text: string;
+};

@@ -1,5 +1,6 @@
 import Achivements from "@/components/sections/Achivements";
 import BannerCta from "@/components/sections/BannerCta";
+import Extras from "@/components/sections/Extras";
 import Hero from "@/components/sections/Hero";
 import HowItWorks from "@/components/sections/HowItWorks";
 import Services from "@/components/sections/Services";
@@ -14,6 +15,7 @@ export default function Home() {
       <HowItWorks />
       <Achivements />
       <BannerCta />
+      <Extras />
     </main>
   );
 }

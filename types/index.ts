@@ -28,6 +28,7 @@ export type Achivements = {
 };
 
 export type Extras = {
+  icon: string;
   title: string;
   text: string;
 };

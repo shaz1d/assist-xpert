@@ -1,4 +1,4 @@
-import { Achivements, NavItem, Service, Steps } from "@/types";
+import { Achivements, Extras, NavItem, Service, Steps } from "@/types";
 
 type SiteConfig = {
   mainNav: NavItem[];
@@ -12,6 +12,7 @@ type SiteConfig = {
   };
   howItWorks: Steps[];
   achivements: Achivements[];
+  extras: Extras[];
 };
 
 export const siteConfig: SiteConfig = {
@@ -178,6 +179,30 @@ export const siteConfig: SiteConfig = {
     {
       title: "1800",
       text: "Contractors at the ready",
+    },
+  ],
+
+  extras: [
+    {
+      icon: "bx bx-map-pin",
+      title: "BASED IN THE U.S.",
+      text: "Our Specialists are in the U.S. with proven and verified experience.",
+    },
+
+    {
+      icon: "bx bx-laptop",
+      title: "COMPLETELY REMOTE",
+      text: "Keep costs low by hiring someone remotely and skipping the overhead.",
+    },
+    {
+      icon: "bx bx-user-check",
+      title: "FULLY MANAGED",
+      text: "Our team guides you through every step of the process—as you onboard and beyond.",
+    },
+    {
+      icon: "bx bx-receipt",
+      title: "FRACTIONAL",
+      text: "Only pay for what you need. And if your needs change, so can your commitment.",
     },
   ],
 };

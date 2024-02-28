@@ -8,7 +8,7 @@ const HowItWorks = () => {
       <div className="container">
         <h1 className=" text-center text-5xl mb-8">How It Works</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {steps.map((item, index) => {
             return (
               <div
@@ -30,7 +30,9 @@ const HowItWorks = () => {
           })}
         </div>
         <div className=" flex justify-center">
-          <PrimaryButton href="/hire">Lets Connect</PrimaryButton>
+          <PrimaryButton className="" href="/hire">
+            Lets Connect
+          </PrimaryButton>
         </div>
       </div>
     </section>

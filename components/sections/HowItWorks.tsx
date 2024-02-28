@@ -15,13 +15,13 @@ const HowItWorks = () => {
                 className=" relative rounded-lg p-8 md:py-12 md:px-14 group"
                 key={index}
               >
-                <div className=" transition-all duration-200 opacity-0 group-hover:opacity-100 absolute inset-0 rounded-lg bg-gradient-to-tl from-emerald-400 to-cyan-500"></div>
+                <div className=" transition-all duration-200 opacity-0 group-hover:opacity-100 absolute inset-0 rounded-lg bg-gradient-to-tl from-emerald-500 to-cyan-500"></div>
                 <div className="relative pb-8">
                   <div className=" text-5xl mb-12 bg-gradient-to-tr from-sky-600 to-emerald-400 inline-block text-transparent bg-clip-text group-hover:text-cyan-50">
                     <i className={item.icon}></i>
                   </div>
-                  <h3 className=" text-2xl mb-4">{item.step}</h3>
-                  <p className=" leading-7 tracking-wider text-gray-300 group-hover:text-gray-200">
+                  <h3 className=" text-2xl mb-4 font-medium">{item.step}</h3>
+                  <p className="  leading-7 tracking-widest text-gray-300 group-hover:text-gray-100 ">
                     {item.description}
                   </p>
                 </div>

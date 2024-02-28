@@ -20,17 +20,17 @@ const Extras = () => {
               return (
                 <div
                   key={index}
-                  className=" rounded-lg text-center p-6 pb-16 relative group"
+                  className=" rounded-lg text-center p-6 lg:px-12 pb-16 relative group"
                 >
                   <div className=" opacity-0 group-hover:opacity-100 transition-all duration-200 absolute inset-0 bg-gradient-to-tl from-emerald-500 to-sky-500 rounded-lg"></div>
                   <div className=" relative">
                     <span className="text-4xl mb-6 bg-gradient-to-tr from-sky-600 to-emerald-400 inline-block text-transparent bg-clip-text group-hover:text-cyan-50">
                       <i className={item.icon}></i>
                     </span>
-                    <h3 className="uppercase mb-4 text-lg font-medium">
+                    <h3 className="uppercase mb-4 text-lg md:text-xl font-medium">
                       {item.title}
                     </h3>
-                    <p className=" text-gray-400 group-hover:text-cyan-50 tracking-widest">
+                    <p className=" text-gray-400 group-hover:text-cyan-50 tracking-widest lg:text-lg">
                       {item.text}
                     </p>
                   </div>

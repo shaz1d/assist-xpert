@@ -22,7 +22,7 @@
   }
 }
 @layer base {
-  .container {
+  .container-x {
     @apply w-full max-w-7xl px-5 mx-auto;
   }
   .section {

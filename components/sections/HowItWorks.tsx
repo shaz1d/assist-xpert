@@ -5,7 +5,7 @@ const HowItWorks = () => {
   const steps = siteConfig.howItWorks;
   return (
     <section className="section">
-      <div className="container">
+      <div className="container-x">
         <h1 className=" text-center text-5xl mb-8">How It Works</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">

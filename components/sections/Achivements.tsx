@@ -4,7 +4,7 @@ const Achivements = () => {
   const achivements = siteConfig.achivements;
   return (
     <div className="section">
-      <div className="container">
+      <div className="container-x">
         <h1 className=" text-2xl mb-12 text-center px-12">
           Your Path to Productivity Has Never Been Easier
         </h1>

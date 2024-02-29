@@ -5,7 +5,7 @@ const Services = () => {
   const services = siteConfig.services;
   return (
     <section className="section">
-      <div className="container">
+      <div className="container-x">
         <div className="flex flex-col md:flex-row gap-5 items-center w-full">
           <div>
             <h2 className="text-5xl font-bold">Services We Provide</h2>

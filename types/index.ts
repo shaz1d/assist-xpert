@@ -1,5 +1,3 @@
-import React from "react";
-
 export type NavItem = {
   name: string;
   path: string;
@@ -12,7 +10,7 @@ export type Service = {
 };
 
 export type Socials = {
-  icon: React.ReactNode;
+  icon: string;
   link: string;
 };
 
@@ -31,4 +29,9 @@ export type Extras = {
   icon: string;
   title: string;
   text: string;
+};
+
+export type FooterLinks = {
+  title: string;
+  link: string;
 };

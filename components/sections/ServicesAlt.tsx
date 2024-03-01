@@ -24,7 +24,7 @@ const ServicesAlt = () => {
 
         <a
           href="#"
-          className="block bg-[url('/assistant.avif')] bg-cover bg-center px-12 py-28 relative group text-blue-950 hover:text-blue-100 duration-200"
+          className="block bg-[url('/accounting.jpg')] bg-cover bg-center px-12 py-28 relative group text-blue-950 hover:text-blue-100 duration-200"
         >
           <div className=" absolute inset-0 bg-sky-200  transition-all duration-200 group-hover:bg-sky-900/85"></div>
           <div className="relative flex flex-col space-y-3">
@@ -45,7 +45,7 @@ const ServicesAlt = () => {
 
         <a
           href="#"
-          className="block bg-[url('/assistant.avif')] bg-cover bg-center px-12 py-28 relative group text-blue-950 hover:text-blue-100 duration-200"
+          className="block bg-[url('/social-media-manager.jpg')] bg-cover bg-center px-12 py-28 relative group text-blue-950 hover:text-blue-100 duration-200"
         >
           <div className=" absolute inset-0 bg-sky-200  transition-all duration-200 group-hover:bg-sky-900/85"></div>
           <div className="relative flex flex-col space-y-3">

@@ -2,7 +2,7 @@ import PrimaryButton from "../ui/PrimaryButton";
 
 const SalesBanner = () => {
   return (
-    <section className=" section bg-gradient-to-tl from-sky-400 to-sky-500">
+    <section className=" section bg-gradient-to-br from-primary to-primary-lt">
       <div className=" container-x">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-y-12">
           <div className=" space-y-5">

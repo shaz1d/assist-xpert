@@ -95,7 +95,7 @@ const Footer = () => {
                   <li key={index}>
                     <a
                       href={item.link}
-                      className=" transition-colors duration-200 p-1 hover:text-sky-400"
+                      className=" transition-colors duration-200 p-1 hover:text-primary-lt"
                     >
                       <i className={item.icon}></i>
                     </a>

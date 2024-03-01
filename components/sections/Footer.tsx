@@ -29,7 +29,7 @@ const Footer = () => {
               <span>
                 Virtual Assistants. Accounting Services. Social Media Managers.
               </span>
-              <span>Made with ♥ from the BELAY team.</span>
+              <span>Made with ♥ from the Assist Xpert team.</span>
             </div>
             <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
               <ul className="space-y-4">
@@ -87,7 +87,7 @@ const Footer = () => {
         <div className="container">
           <div className=" grid grid-cols-1 md:grid-cols-2 py-4 text-xs gap-4">
             <div className="flex items-center tracking-widest justify-center md:justify-start">
-              © 2024 BELAY. Privacy | Terms | Diversity & Inclusion
+              © 2024 Assist Xpert. Privacy | Terms | Diversity & Inclusion
             </div>
             <ul className=" flex items-center justify-center  md:justify-end gap-4 text-lg">
               {socials.map((item, index) => {

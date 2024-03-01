@@ -1,4 +1,12 @@
-import { Achivements, Extras, NavItem, Service, Steps } from "@/types";
+import {
+  Achivements,
+  Extras,
+  FooterLinks,
+  NavItem,
+  Service,
+  Socials,
+  Steps,
+} from "@/types";
 
 type SiteConfig = {
   mainNav: NavItem[];
@@ -13,6 +21,8 @@ type SiteConfig = {
   howItWorks: Steps[];
   achivements: Achivements[];
   extras: Extras[];
+  footerLinks: FooterLinks[];
+  socials: Socials[];
 };
 
 export const siteConfig: SiteConfig = {
@@ -203,6 +213,79 @@ export const siteConfig: SiteConfig = {
       icon: "bx bx-receipt",
       title: "FRACTIONAL",
       text: "Only pay for what you need. And if your needs change, so can your commitment.",
+    },
+  ],
+
+  footerLinks: [
+    {
+      title: "Get Started",
+      link: "/get-started",
+    },
+    {
+      title: "Virtual Assistants",
+      link: "/virtual-assistants",
+    },
+    {
+      title: "Accounting Services",
+      link: "/accounting-services",
+    },
+    {
+      title: "Social Media Managers",
+      link: "/social-mediamanagers",
+    },
+    {
+      title: "More Resources",
+      link: "/more-resources",
+    },
+    {
+      title: "Read Our Blog",
+      link: "/read-our-blog",
+    },
+    {
+      title: "One Next Step Podcast",
+      link: "/one-next-step-podcast",
+    },
+    {
+      title: "Our Company",
+      link: "/our-company",
+    },
+    {
+      title: "Jobs",
+      link: "/jobs",
+    },
+  ],
+  socials: [
+    {
+      icon: "bx bxl-twitter",
+      link: "www.twitter.com/assisxpert.com",
+    },
+    {
+      icon: "bx bxl-facebook",
+      link: "www.facebook.com/assisxpert.com",
+    },
+    {
+      icon: "bx bxl-linkedin",
+      link: "www.linkedin.com/assisxpert.com",
+    },
+    {
+      icon: "bx bxl-youtube",
+      link: "www.youtube.com/assisxpert.com",
+    },
+    {
+      icon: "bx bxl-instagram",
+      link: "www.instagram.com/assisxpert.com",
+    },
+    {
+      icon: "bx bxl-spotify",
+      link: "www.spotify.com/assisxpert.com",
+    },
+    {
+      icon: "bx bxs-phone",
+      link: "tel:+8801992327887",
+    },
+    {
+      icon: "bx bxs-envelope",
+      link: "mailto:info@assistxpert.com",
     },
   ],
 };

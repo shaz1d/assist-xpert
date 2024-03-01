@@ -62,14 +62,11 @@ const Navbar = () => {
         </div>
       </nav>
       <div
-        style={{
-          background: "linear-gradient(135deg, #1a252b 0%, #03344f 100%)",
-        }}
         className={cn(
           open
             ? "opacity-1 pointer-events-all"
             : "opacity-0 pointer-events-none",
-          "fixed h-screen w-full top-0 z-10 transition duration-500 pt-16 overflow-y-scroll scrollbar-none"
+          "fixed h-screen w-full top-0 z-10 transition duration-500 pt-16 overflow-y-scroll scrollbar-none bg-gradient-to-br from-primary to-sky-300"
         )}
       >
         <div className="container-x">

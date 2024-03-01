@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="section pb-0">
-        <div className="container">
+        <div className="container-x">
           <div className=" grid grid-cols-1 md:grid-cols-2 gap-12 text-sm text-gray-300">
             <div className=" flex flex-col gap-y-4">
               <div className="flex items-end gap-2 mb-8">
@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="py-8 mt-8 bg-slate-100 text-gray-800">
-          <div className="container">
+          <div className="container-x">
             <p className="text-sm font-light leading-7">
               <span className=" bg-green-500 uppercase p-1 font-medium tracking-widest mr-1">
                 IMITATED BUT NEVER DUPLICATED:
@@ -84,7 +84,7 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="container">
+        <div className="container-x">
           <div className=" grid grid-cols-1 md:grid-cols-2 py-4 text-xs gap-4">
             <div className="flex items-center tracking-widest justify-center md:justify-start">
               © 2024 Assist Xpert. Privacy | Terms | Diversity & Inclusion

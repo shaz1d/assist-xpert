@@ -12,11 +12,11 @@ const Achivements = () => {
           {achivements.map((item, index) => {
             return (
               <div className=" px-12 py-6 text-center" key={index}>
-                <h2 className="text-6xl font-semibold bg-gradient-to-tr from-sky-600 to-emerald-400 inline-block text-transparent bg-clip-text group-hover:text-cyan-50">
+                <h2 className="text-6xl font-semibold bg-gradient-to-tr from-primary to-sky-300 inline-block text-transparent bg-clip-text group-hover:text-cyan-50">
                   {item.title}
                 </h2>
                 <div className="w-32 md:w-36 mx-auto">
-                  <div className="w-full h-px bg-gradient-to-r from-sky-600 to-emerald-400 my-3"></div>
+                  <div className="w-full h-px bg-gradient-to-r from-primary to-sky-300 my-3"></div>
                   <p className=" uppercase font-extralight tracking-widest">
                     {item.text}
                   </p>

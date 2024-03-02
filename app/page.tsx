@@ -1,5 +1,6 @@
 import Achivements from "@/components/sections/Achivements";
 import BannerCta from "@/components/sections/BannerCta";
+import BookRelease from "@/components/sections/BookRelease";
 import Extras from "@/components/sections/Extras";
 import Hero from "@/components/sections/Hero";
 import HowItWorks from "@/components/sections/HowItWorks";
@@ -18,6 +19,7 @@ export default function Home() {
       <BannerCta />
       <Extras />
       <SalesBanner />
+      <BookRelease />
     </main>
   );
 }

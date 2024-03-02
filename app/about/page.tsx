@@ -1,3 +1,4 @@
+import BannerCta from "@/components/sections/BannerCta";
 import { Mail, MapPinned, PhoneCall } from "lucide-react";
 import Image from "next/image";
 
@@ -57,6 +58,20 @@ const About = () => {
           </div>
         </div>
       </section>
+      <section className="py-32">
+        <div className="container-x">
+          <h2 className="text-4xl font-medium text-primary">
+            We are a motley crew of impossibly talented, endlessly passionate,
+            and uncomfortably generous eclectic souls, all united by one common
+            denominator: We live to serve. We don’t mean that in a lip service,
+            shake-hands-and-kiss-babies kind of way; we mean that we all share a
+            servant’s heart. And that’s precisely how we all scored this
+            seriously sweet gig despite the odds.
+          </h2>
+          <p></p>
+        </div>
+      </section>
+      <BannerCta />
     </>
   );
 };

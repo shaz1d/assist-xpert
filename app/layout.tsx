@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/sections/Footer";
 import { cn } from "@/lib/utils";
 import "boxicons/css/boxicons.min.css";
 import type { Metadata } from "next";
@@ -30,6 +31,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

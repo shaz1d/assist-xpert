@@ -35,3 +35,7 @@ export type FooterLinks = {
   title: string;
   link: string;
 };
+
+export type Testimonials = {
+  text: string;
+};

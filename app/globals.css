@@ -28,4 +28,11 @@
   .section {
     @apply py-24;
   }
+  .swiper-custom-bullet {
+    @apply w-3 h-3 rounded-full bg-transparent border border-white transition duration-500 cursor-pointer;
+  }
+
+  .swiper-custom-bullet.swiper-custom-bullet-active {
+    @apply bg-white;
+  }
 }

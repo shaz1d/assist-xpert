@@ -1,4 +1,5 @@
 import BannerCta from "@/components/sections/BannerCta";
+import Testimonials from "@/components/sections/Testimonials";
 import { Mail, MapPinned, PhoneCall } from "lucide-react";
 import Image from "next/image";
 
@@ -68,9 +69,108 @@ const About = () => {
             servant’s heart. And that’s precisely how we all scored this
             seriously sweet gig despite the odds.
           </h2>
-          <p></p>
+          <div className="mt-10">
+            <p>
+              What we don’t all share? A state or city. A zip or even area code.
+              We come from all walks of life, all lifestyles, all interests.
+              <br />
+            </p>
+            <p>
+              That’s our secret sauce, actually. We all recognize that we are
+              greater than the sum of our parts, so we strive every day to hold
+              space for one another and our clients and fill it with kindness,
+              honesty, gratitude, fun, and integrity.
+            </p>
+            <p>
+              And while we don’t take ourselves seriously, we take those values
+              very seriously.
+            </p>
+            <p>
+              As such, we recognize that our people are our lifeblood. Our
+              boots-on-the-ground. The wind beneath our wings. We could go on
+              but … you get the point.
+            </p>
+            <p>
+              BELAY is headquartered in Atlanta, but our team is spread out
+              across 48 states in the U.S. because in not-so-shocking news, the
+              workforce has changed a lot since the Industrial Revolution. So
+              while many companies don’t have conveyor belts and assembly lines
+              anymore, they still operate like they do – and treat their
+              employees like they do, too. In fact, if you think about what
+              offices look like today, it’s the same thing: They put people in
+              lines of cubicles and put managers around them to make sure
+              they’re doing what they need to do.
+              <br />
+            </p>
+            <p>Not BELAY.</p>
+            <p>
+              Think of us as Sam-I-Am: We know our people can work their magic
+              from near to far and here to there. We trust our people to work
+              from anywhere.
+            </p>
+            <p>
+              BELAY was created with every person who had become disillusioned
+              with working in an office in mind. For all those who considered
+              leaving to take care of their families but always felt something
+              was missing.
+            </p>
+            <p>
+              Remote work is here, and we’re proud to lead the charge in
+              disrupting the status quo and dismantling the ‘way things have
+              always been done.’ The future is now. So the more people told us
+              we couldn’t create a virtual culture, the more we believed we
+              could.
+            </p>
+            <p>
+              Our culture is not Secret Santa gift exchanges, karaoke contests,
+              Nerf gun fights, catered food truck lunches or a zip-lining
+              outward-bound excursion with co-workers. It’s not ping pong
+              tables, fully-stocked beer fridges, and nap pods.
+            </p>
+            <p>
+              Though admittedly, those things are decidedly awesome (and we’ve
+              totally done&nbsp;<em>all</em> of those things except ping pong).
+            </p>
+            <p>But culture is not environmental ornamentation.</p>
+            <p>
+              Since 2010, we’ve proven that a shared vision – not a shared space
+              – creates a culture. Our collective sense of belonging ensures we
+              all identify with our mission, vision and values.
+            </p>
+            <p>
+              We’ve won major culture and business awards from prominent
+              national magazines and outlets despite the fact that not a single
+              one of our team members shares an office. Why? Because we
+              understand how culture is really created. So we instill our
+              mission and values of gratitude, teamwork, vision, passion, fun,
+              and God into every one of our nearly 1,200 remote workforce team
+              members.
+            </p>
+            <p>
+              We know that culture isn’t something that you can see, taste,
+              touch, or smell; it is the only environment that you can feel.
+              It’s that feeling in the pit of your stomach when you dread going
+              to work or the excitement you feel when you’re actually eager to
+              go to work. For us – and this may seem contrived – not being
+              encumbered by having to go to an office every day means we really,
+              truly have fun working together.
+            </p>
+            <p>And our vibrant culture makes it possible.</p>
+            <p>
+              It’s inextricably linked to our vision with no margin for ‘kinda
+              sorta’ cultural commitments; you’ve got to be all in. Our culture
+              is a hum. A verve. A vibe. An electricity.
+            </p>
+            <p>
+              So in everything we do, in all that we are, we are our culture.
+              Our people are our culture. And everything else falls perfectly
+              into place.
+            </p>
+            <br />
+          </div>
         </div>
       </section>
+      <Testimonials />
       <BannerCta />
     </>
   );

@@ -6,6 +6,7 @@ import {
   Service,
   Socials,
   Steps,
+  Testimonials,
 } from "@/types";
 
 type SiteConfig = {
@@ -23,6 +24,7 @@ type SiteConfig = {
   extras: Extras[];
   footerLinks: FooterLinks[];
   socials: Socials[];
+  testimonials: Testimonials[];
 };
 
 export const siteConfig: SiteConfig = {
@@ -286,6 +288,32 @@ export const siteConfig: SiteConfig = {
     {
       icon: "bx bxs-envelope",
       link: "mailto:info@assistxpert.com",
+    },
+  ],
+  testimonials: [
+    {
+      text: "I must admit that we were a little skeptical at first, but after getting lectured by Michael Hyatt for a year, we finally decided we'd try a VA. Michael was right – having Kaitie has been a godsend this month. She has helped tie up so many loose ends and free up our time to concentrate on moving the business forward.",
+    },
+    {
+      text: "I never realized how much time I was spending on scheduling and admin tasks until I was able to see all that she has done and does daily. Having my meetings spaced and strategically placed has been so incredibly helpful. She is wonderful!",
+    },
+    {
+      text: "How have I run a business for 13 years without Michelle and all that she does? She has opened my eyes to a lot of things and I really feel like I can start serving my clients well again.",
+    },
+    {
+      text: "No other way to say it – VA Josephine is a superstar! She is the missing piece to our organization and we’re are now asking ourselves, ‘What would we do without Josephine?’",
+    },
+    {
+      text: "This is the best decision I ever made! My business is growing really well and Allie has been hugely influential in aiding the growth and creating processes that allow us to scale well.",
+    },
+    {
+      text: "Kelli is doing a great job. She is very proactive and has already figured out how to stay one step ahead. I love that she is very resourceful and just gets in there to figure things out. I was very nervous about not being able to interview the candidates, but I'm so happy that I trusted the process. BELAY has found me the perfect match!",
+    },
+    {
+      text: "Can you clone Camille? If so, we’d like two more, please! Camille is everything. I recommend BELAY to anyone who will listen because of how much Camille has changed my life for the better.",
+    },
+    {
+      text: "I want to thank you for helping us to figure out how best to use VAs. Because of the quality of your work and responsiveness, you've helped me build confidence with the team that they can let go of tasks and trust you to support them. That's huge!",
     },
   ],
 };

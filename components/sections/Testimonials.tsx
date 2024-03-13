@@ -35,7 +35,7 @@ const Testimonials = () => {
 
         <div className=" relative text-center p-6 tracking-wider z-20">
           <h2 className=" uppercase text-lg mb-4">
-            Don't just take it from us.
+            Don&apos;t just take it from us.
           </h2>
           <h1 className=" text-4xl md:text-5xl mb-8">Hear From Our Clients.</h1>
           <button onClick={() => {setShowModal(true)}} className=" p-2 text-4xl rounded-full border-2 md:border-4 border-white w-12 md:w-14 h-12 md:h-14 inline-flex items-center justify-center">
@@ -48,7 +48,7 @@ const Testimonials = () => {
         <div className="relative px-4 md:px-8 lg:px-20">
           <div className="flex flex-col items-center gap-y-4 mb-12">
             <h2 className=" tracking-widest text-2xl uppercase">
-              What They're Saying
+              What They&apos;re Saying
             </h2>
             <div className=" bg-primary h-[2px] w-16"></div>
           </div>
@@ -72,7 +72,7 @@ const Testimonials = () => {
               return (
                 <SwiperSlide key={index}>
                   <div className=" w-full text-white text-center font-light text-xl leading-10">
-                    "{item.text}"
+                  &quot;{item.text}&quot;
                   </div>
                 </SwiperSlide>
               );

@@ -5,10 +5,37 @@ import { z } from "zod";
 
 type FormTypes = z.infer<typeof formSchema>;
 const ContactForm = () => {
-  const { register, handleSubmit } = useForm<FormTypes>();
-  const onSubmit: SubmitHandler<FormTypes> = (data) => {
-    console.log(data);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm<FormTypes>({
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      service: "",
+      message: "",
+    },
+  });
+  const onSubmit: SubmitHandler<FormTypes> = async (data) => {
+    await fetch("/api/email", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        service: data.service,
+        message: data.message,
+      }),
+    }).then((res) => {
+      console.log(res.json());
+    });
   };
+
   return (
     <form
       className="w-full max-w-3xl flex flex-col  gap-3 mx-auto bg-white text-content shadow-2xl rounded-3xl p-5 md:p-10"
@@ -26,6 +53,9 @@ const ContactForm = () => {
           autoComplete="name"
           {...register("name")}
         />
+        {errors.name && (
+          <p className="text-red-500 text-xs italic">{errors.name.message}</p>
+        )}
       </div>
       <div className="w-full">
         <label className="block text-sm font-medium" htmlFor="email">
@@ -37,6 +67,9 @@ const ContactForm = () => {
           type="email"
           {...register("email")}
         />
+        {errors.email && (
+          <p className="text-red-500 text-xs italic">{errors.email.message}</p>
+        )}
       </div>
       <div className="w-full">
         <label className="block text-sm font-medium" htmlFor="phone">
@@ -48,6 +81,9 @@ const ContactForm = () => {
           type="text"
           {...register("phone")}
         />
+        {errors.phone && (
+          <p className="text-red-500 text-xs italic">{errors.phone.message}</p>
+        )}
       </div>
       <div className="w-full">
         <label className="block text-sm font-medium" htmlFor="service">
@@ -63,6 +99,11 @@ const ContactForm = () => {
           <option value="web-design">Web Design</option>
           <option value="web-development">Web Development</option>
         </select>
+        {errors.service && (
+          <p className="text-red-500 text-sm font-medium">
+            {errors.service.message}
+          </p>
+        )}
       </div>
       <div className="w-full">
         <label className="block text-sm font-medium" htmlFor="message">
@@ -79,6 +120,7 @@ const ContactForm = () => {
       <button
         className="bg-primary py-2 px-10 text-white font-medium  rounded-lg self-end"
         type="submit"
+        disabled={isSubmitting}
       >
         Submit
       </button>

@@ -4,6 +4,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
 
 type FormTypes = z.infer<typeof formSchema>;
+
 const ContactForm = () => {
   const {
     register,
@@ -18,6 +19,7 @@ const ContactForm = () => {
       message: "",
     },
   });
+
   const onSubmit: SubmitHandler<FormTypes> = async (data) => {
     await fetch("/api/email", {
       method: "POST",
@@ -31,8 +33,6 @@ const ContactForm = () => {
         service: data.service,
         message: data.message,
       }),
-    }).then((res) => {
-      console.log(res.json());
     });
   };
 

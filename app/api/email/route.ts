@@ -19,10 +19,7 @@ export async function POST(req: Request) {
     console.log(testResult);
   } catch (error) {
     console.log(error);
-    return {
-      status: 500,
-      body: error,
-    };
+    return;
   }
 
   try {
@@ -37,6 +34,4 @@ export async function POST(req: Request) {
   } catch (error) {
     console.log(error);
   }
-
-  return Response.json(data);
 }

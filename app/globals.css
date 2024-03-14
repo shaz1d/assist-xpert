@@ -36,3 +36,6 @@
     @apply bg-white;
   }
 }
+.PhoneInputInput {
+  @apply block bg-primary-lt/10 rounded-md w-full accent-primary border-primary/10 focus:border-primary/40 border p-2;
+}

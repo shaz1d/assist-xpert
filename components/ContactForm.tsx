@@ -1,13 +1,18 @@
 "use client";
 import { formSchema } from "@/schema/schema";
-import { SubmitHandler, useForm } from "react-hook-form";
+import { useRouter } from "next/navigation";
+import { Controller, SubmitHandler, useForm } from "react-hook-form";
+import PhoneInput, { isPossiblePhoneNumber } from "react-phone-number-input";
 import { z } from "zod";
+
+import "react-phone-number-input/style.css";
 
 type FormTypes = z.infer<typeof formSchema>;
 
 const ContactForm = () => {
   const {
     register,
+    control,
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm<FormTypes>({
@@ -19,6 +24,7 @@ const ContactForm = () => {
       message: "",
     },
   });
+  const router = useRouter();
 
   const onSubmit: SubmitHandler<FormTypes> = async (data) => {
     await fetch("/api/email", {
@@ -26,14 +32,9 @@ const ContactForm = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({
-        name: data.name,
-        email: data.email,
-        phone: data.phone,
-        service: data.service,
-        message: data.message,
-      }),
+      body: JSON.stringify(data),
     });
+    router.push("/thank-you");
   };
 
   return (
@@ -75,12 +76,22 @@ const ContactForm = () => {
         <label className="block text-sm font-medium" htmlFor="phone">
           Phone
         </label>
-        <input
-          className="block bg-primary-lt/10 rounded-md w-full mt-1 p-2 accent-primary border-primary/10 focus:border-primary/40 border"
-          id="phone"
-          type="text"
-          {...register("phone")}
+        <Controller
+          control={control}
+          name="phone"
+          rules={{ validate: (value) => isPossiblePhoneNumber(value) }}
+          render={({ field: { onChange, value } }) => (
+            <PhoneInput
+              className="relative mt-1 pl-1"
+              onChange={onChange}
+              value={value}
+              international
+              defaultCountry="US"
+              id="phone"
+            />
+          )}
         />
+
         {errors.phone && (
           <p className="text-red-500 text-xs italic">{errors.phone.message}</p>
         )}
@@ -91,7 +102,7 @@ const ContactForm = () => {
         </label>
 
         <select
-          className="block bg-primary-lt/10 rounded-md w-full mt-1 p-2 text-sm accent-primary border-primary/10 focus:border-primary/40 border"
+          className="block bg-primary-lt/10 rounded-md w-full mt-1 px-2 py-3 text-sm  accent-primary border-primary/10 focus:border-primary/40 border"
           id="service"
           {...register("service")}
         >
@@ -118,7 +129,7 @@ const ContactForm = () => {
       </div>
 
       <button
-        className="bg-primary py-2 px-10 text-white font-medium  rounded-lg self-end"
+        className="bg-primary py-2 px-10 text-white font-medium  rounded-lg self-end disabled:text-white/60 disabled:cursor-not-allowed"
         type="submit"
         disabled={isSubmitting}
       >

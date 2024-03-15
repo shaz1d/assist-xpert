@@ -21,7 +21,6 @@ export async function POST(req: Request) {
     console.log(testResult);
   } catch (error) {
     console.log(error);
-    return;
   }
 
   try {

@@ -37,10 +37,6 @@ export const siteConfig: SiteConfig = {
       name: "About",
       path: "/about",
     },
-    {
-      name: "Services",
-      path: "/services",
-    },
 
     {
       name: "Contact",

@@ -97,7 +97,6 @@ const ContactForm = () => {
         )}
       </div>
       <div className="w-full">
-        <p>{process.env.SMTP_EMAIL}</p>
         <label className="block text-sm font-medium" htmlFor="service">
           Service you are interested in
         </label>

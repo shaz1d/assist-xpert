@@ -1,4 +1,4 @@
-import ContactForm from "@/components/ContactForm";
+import Form from "@/components/Form";
 
 const Contact = () => {
   return (
@@ -10,7 +10,7 @@ const Contact = () => {
           </h1>
           <p className="max-w-3xl mx-auto text-center">Ready to make a move?</p>
           <div className="mt-8">
-            <ContactForm />
+            <Form />
           </div>
         </div>
       </section>

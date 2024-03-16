@@ -2,7 +2,6 @@
 import { formSchema } from "@/schema/schema";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import PhoneInput from "react-phone-number-input";
 import "react-phone-number-input/style.css";
@@ -27,7 +26,6 @@ const ContactForm = () => {
       message: "",
     },
   });
-  const [successMessage, setSuccessMessage] = useState("");
   const router = useRouter();
   const onSubmit: SubmitHandler<FormTypes> = async (formData) => {
     const data = await fetch("/api/form", {
@@ -40,11 +38,6 @@ const ContactForm = () => {
     console.log(data);
     reset();
     router.push("/thank-you");
-    setSuccessMessage(data.message);
-
-    setTimeout(() => {
-      setSuccessMessage("");
-    }, 3000);
   };
 
   return (
@@ -148,7 +141,6 @@ const ContactForm = () => {
           Submit
         </button>
       </form>
-      {successMessage && <p>{successMessage}</p>}
     </div>
   );
 };

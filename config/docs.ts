@@ -37,6 +37,15 @@ export const siteConfig: SiteConfig = {
       name: "About",
       path: "/about",
     },
+    {
+      name: "Services",
+      submenu: [
+        { name: "Virtual Assistant", icon: "bx-headphone", path: "/blogs" },
+        { name: "Web Design", icon: "bx-shape-triangle", path: "/web-design" },
+        { name: "Web Development", icon: "bx-code-alt", path: "/web-design" },
+        { name: "Branding", icon: "bx-bulb", path: "/web-design" },
+      ],
+    },
 
     {
       name: "Contact",

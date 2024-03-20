@@ -1,6 +1,12 @@
-export type NavItem = {
+export type NavSubmenu = {
   name: string;
   path: string;
+  icon: string;
+};
+export type NavItem = {
+  name: string;
+  path?: string;
+  submenu?: NavSubmenu[];
 };
 
 export type Service = {

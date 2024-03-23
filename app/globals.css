@@ -31,7 +31,7 @@
   h3,
   h4 {
     font-family: var(--font-roboto-slab);
-    @apply font-normal leading-normal;
+    @apply font-normal;
   }
   .container-x {
     @apply w-full max-w-7xl px-5 mx-auto;

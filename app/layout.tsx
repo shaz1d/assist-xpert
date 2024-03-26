@@ -3,10 +3,20 @@ import Footer from "@/components/sections/Footer";
 import { cn } from "@/lib/utils";
 import "boxicons/css/boxicons.min.css";
 import type { Metadata } from "next";
-import { Roboto_Condensed } from "next/font/google";
+import { Roboto_Condensed, Roboto_Slab } from "next/font/google";
 import "./globals.css";
 
-const roboto = Roboto_Condensed({ subsets: ["latin"] });
+const roboto = Roboto_Condensed({
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  display: "swap",
+});
+const roboto_slab = Roboto_Slab({
+  subsets: ["latin"],
+  variable: "--font-roboto-slab",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Assist Xpert",
@@ -26,7 +36,7 @@ export default function RootLayout({
       <body
         className={cn(
           "min-h-screen bg-secondary text-white ",
-          roboto.className
+          `${roboto.variable} ${roboto_slab.variable}`
         )}
       >
         <Navbar />

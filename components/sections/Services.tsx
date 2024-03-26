@@ -8,7 +8,7 @@ const Services = () => {
       <div className="container-x">
         <div className="flex flex-col md:flex-row gap-5 items-center w-full">
           <div>
-            <h2 className="text-5xl font-bold">Services We Provide</h2>
+            <h2 className="text-5xl leading-tight">Services We Provide</h2>
             <p className="max-w-3xl mt-1">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime
               consequuntur expedita doloremque dolorem nostrum soluta sapiente

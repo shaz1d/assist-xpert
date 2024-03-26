@@ -1,17 +1,21 @@
 import { siteConfig } from "@/config/docs";
 import PrimaryButton from "../ui/PrimaryButton";
+import Reveal from "../ui/Reveal";
 
 const HowItWorks = () => {
   const steps = siteConfig.howItWorks;
   return (
     <section className="section">
       <div className="container-x">
-        <h1 className=" text-center text-5xl mb-8">How It Works</h1>
+        <Reveal delay={0.25}>
+          <h1 className=" text-center text-5xl mb-8">How It Works</h1>
+        </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {steps.map((item, index) => {
             return (
-              <div
+              <Reveal
+                delay={0.35 + index * 0.15}
                 className=" relative rounded-lg p-8 md:py-12 md:px-14 group"
                 key={index}
               >
@@ -25,15 +29,15 @@ const HowItWorks = () => {
                     {item.description}
                   </p>
                 </div>
-              </div>
+              </Reveal>
             );
           })}
         </div>
-        <div className=" flex justify-center">
+        <Reveal delay={0.25} className=" flex justify-center">
           <PrimaryButton className="" href="/hire">
             Lets Connect
           </PrimaryButton>
-        </div>
+        </Reveal>
       </div>
     </section>
   );

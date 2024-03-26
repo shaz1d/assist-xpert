@@ -3,9 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer = () => {
-  const footerLinks = siteConfig.footerLinks;
-  const firstHalf = footerLinks.slice(0, footerLinks.length / 2);
-  const remainingHalf = footerLinks.slice(footerLinks.length / 2);
+  const footerGroups = siteConfig.footerGroups;
 
   const socials = siteConfig.socials;
   return (
@@ -32,39 +30,31 @@ const Footer = () => {
               <span>Made with ♥ from the Assist Xpert team.</span>
             </div>
             <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
-              <ul className="space-y-4">
-                {firstHalf.map((item, index) => {
-                  return (
-                    <li key={index}>
-                      <Link
-                        href={item.link}
-                        className=" p-1 transition-colors duration-200 hover:text-gray-500"
-                      >
-                        {item.title}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-
-              <ul className=" space-y-4">
-                {remainingHalf.map((item, index) => {
-                  return (
-                    <li key={index}>
-                      <Link
-                        href={item.link}
-                        className=" p-1 transition-colors duration-200 hover:text-gray-500"
-                      >
-                        {item.title}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
+              {footerGroups.map((item, index) => {
+                return (
+                  <div key={index}>
+                    <h2 className=" font-medium mb-4 text-xl">{item.title}</h2>
+                    <ul className="space-y-4">
+                      {item.links.map((link, i) => {
+                        return (
+                          <li key={i}>
+                            <Link
+                              href={link.link}
+                              className=" p-1 transition-colors duration-200 hover:text-gray-500"
+                            >
+                              {link.title}
+                            </Link>
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
-        <div className="py-8 mt-8 bg-slate-100 text-gray-800">
+        {/* <div className="py-8 mt-8 bg-slate-100 text-gray-800">
           <div className="container-x">
             <p className="text-sm font-light leading-7">
               <span className=" bg-green-500 uppercase p-1 font-medium tracking-widest mr-1">
@@ -83,7 +73,7 @@ const Footer = () => {
               during our application or hiring process.
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="container-x">
           <div className=" grid grid-cols-1 md:grid-cols-2 py-4 text-xs gap-4">
             <div className="flex items-center tracking-widest justify-center md:justify-start">

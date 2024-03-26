@@ -12,7 +12,7 @@ interface RevealProps {
 
 const Reveal = ({
   children,
-  delay,
+  delay = 0,
   className,
   x = 0,
   y = 50,
@@ -40,7 +40,7 @@ const Reveal = ({
       animate={isInView ? "visible" : "hidden"}
       transition={{
         duration: 0.5,
-        delay: delay ?? 0,
+        delay: delay,
       }}
     >
       {children}

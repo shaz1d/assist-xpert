@@ -1,17 +1,24 @@
 import { siteConfig } from "@/config/docs";
+import Reveal from "../ui/Reveal";
 
 const Achivements = () => {
   const achivements = siteConfig.achivements;
   return (
     <div className="section">
       <div className="container-x">
-        <h1 className=" text-2xl mb-12 text-center px-12">
-          Your Path to Productivity Has Never Been Easier
-        </h1>
+        <Reveal delay={0.25}>
+          <h1 className=" text-2xl mb-12 text-center px-12">
+            Your Path to Productivity Has Never Been Easier
+          </h1>
+        </Reveal>
         <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
           {achivements.map((item, index) => {
             return (
-              <div className=" px-12 py-6 text-center" key={index}>
+              <Reveal
+                delay={0.35 + index * 0.1}
+                className=" px-12 py-6 text-center"
+                key={index}
+              >
                 <h2 className="text-6xl font-semibold bg-gradient-to-tr from-primary to-primary-lt inline-block text-transparent bg-clip-text group-hover:text-cyan-50">
                   {item.title}
                 </h2>
@@ -21,7 +28,7 @@ const Achivements = () => {
                     {item.text}
                   </p>
                 </div>
-              </div>
+              </Reveal>
             );
           })}
         </div>

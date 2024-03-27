@@ -1,9 +1,10 @@
 import {
   Achivements,
   Extras,
-  FooterLinks,
+  FooterGroup,
   NavItem,
   Service,
+  ServiceAlt,
   Socials,
   Steps,
   Testimonials,
@@ -19,10 +20,11 @@ type SiteConfig = {
     marketing: Service;
     assistance: Service;
   };
+  servicesAlt: ServiceAlt[];
   howItWorks: Steps[];
   achivements: Achivements[];
   extras: Extras[];
-  footerLinks: FooterLinks[];
+  footerGroups: FooterGroup[];
   socials: Socials[];
   testimonials: Testimonials[];
 };
@@ -132,6 +134,29 @@ export const siteConfig: SiteConfig = {
       path: "/services/assistance",
     },
   },
+  servicesAlt: [
+    {
+      title: "Virtual Assistant Service",
+      description:
+        "Don’t let administrative overload keep you from focusing on what matters most. Our dedicated Virtual Assistants are your personal superheroes—no phone booth required.",
+      iconClass: "bx bx-headphone",
+      image: "/assistant.avif",
+    },
+    {
+      title: "Accounting Professionals",
+      description:
+        "From Bookkeepers and Payroll Processing to fractional CFO an e-commerce support, we have the team of Accounting Professionals you need to stop worrying about the books and start growing your organization.",
+      iconClass: "bx bx-money",
+      image: "/accounting.jpg",
+    },
+    {
+      title: "Social Media Managers",
+      description:
+        "Say goodbye to the daily “what should we post” worry with BELAY Social Media Managers. Grow your audience and build a robust online presence—while you work on something else.",
+      iconClass: "bx bx-share-alt",
+      image: "/social-media-manager.jpg",
+    },
+  ],
 
   howItWorks: [
     {
@@ -222,45 +247,75 @@ export const siteConfig: SiteConfig = {
       text: "Only pay for what you need. And if your needs change, so can your commitment.",
     },
   ],
-
-  footerLinks: [
+  footerGroups: [
     {
-      title: "Get Started",
-      link: "/get-started",
+      title: "Services",
+      links: [
+        {
+          title: "Digital Marketing Services",
+          link: "",
+        },
+        {
+          title: "SEO Services",
+          link: "",
+        },
+        {
+          title: "PPC Services",
+          link: "",
+        },
+        {
+          title: "Content Marketing Services",
+          link: "",
+        },
+        {
+          title: "Social Media Services",
+          link: "",
+        },
+        {
+          title: "Web Design Services",
+          link: "",
+        },
+        {
+          title: "Digital Advertising Services",
+          link: "",
+        },
+      ],
     },
     {
-      title: "Virtual Assistants",
-      link: "/virtual-assistants",
-    },
-    {
-      title: "Accounting Services",
-      link: "/accounting-services",
-    },
-    {
-      title: "Social Media Managers",
-      link: "/social-mediamanagers",
-    },
-    {
-      title: "More Resources",
-      link: "/more-resources",
-    },
-    {
-      title: "Read Our Blog",
-      link: "/read-our-blog",
-    },
-    {
-      title: "One Next Step Podcast",
-      link: "/one-next-step-podcast",
-    },
-    {
-      title: "Our Company",
-      link: "/our-company",
-    },
-    {
-      title: "Jobs",
-      link: "/jobs",
+      title: "Company",
+      links: [
+        {
+          title: "About Us",
+          link: "",
+        },
+        {
+          title: "Careers",
+          link: "",
+        },
+        {
+          title: "Community Impact",
+          link: "",
+        },
+        {
+          title: "Contact Us",
+          link: "",
+        },
+        {
+          title: "Locations",
+          link: "",
+        },
+        {
+          title: "Phishing Scam Alert",
+          link: "",
+        },
+        {
+          title: "Team",
+          link: "",
+        },
+      ],
     },
   ],
+
   socials: [
     {
       icon: "bx bxl-twitter",

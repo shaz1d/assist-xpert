@@ -15,6 +15,13 @@ export type Service = {
   path: string;
 };
 
+export type ServiceAlt = {
+  title: string;
+  description: string;
+  image: string;
+  iconClass: string;
+};
+
 export type Socials = {
   icon: string;
   link: string;
@@ -44,4 +51,14 @@ export type FooterLinks = {
 
 export type Testimonials = {
   text: string;
+};
+
+type links = {
+  title: string;
+  link: string;
+};
+
+export type FooterGroup = {
+  title: string;
+  links: links[];
 };

@@ -22,6 +22,7 @@ type SiteConfig = {
   };
   servicesAlt: ServiceAlt[];
   howItWorks: Steps[];
+  webDesignServices: Steps[];
   achivements: Achivements[];
   extras: Extras[];
   footerGroups: FooterGroup[];
@@ -199,6 +200,28 @@ export const siteConfig: SiteConfig = {
       step: "Step 6. Nurturing",
       description:
         "You will have ongoing check-ins to support both you and your BELAY Specialist throughout your partnership with BELAY.",
+    },
+  ],
+  webDesignServices: [
+    {
+      icon: "bx bx-devices",
+      step: "UI/UX Design",
+      description:
+        "Using Figma, Photoshop, and Illustrator, I craft visually appealing and intuitive interfaces tailored to enhance user experiences.",
+    },
+
+    {
+      icon: "bx bx-code-alt",
+      step: "Front-end Development",
+      description:
+        "With React and Vue.js, I transform designs into dynamic and responsive web experiences, prioritizing speed and cross-platform compatibility.",
+    },
+
+    {
+      icon: "bx bx-code-block",
+      step: "Back-end Development",
+      description:
+        "Leveraging Laravel and PHP, I build robust and scalable backend solutions to power your applications, ensuring efficiency and reliability.",
     },
   ],
 

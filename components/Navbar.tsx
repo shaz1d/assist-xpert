@@ -33,7 +33,7 @@ const Navbar = () => {
       )}
     >
       <nav className="container-x z-30 w-full h-16 grid grid-cols-3 items-center relative ">
-        <Reveal x={-50} y={0} delay={0.25}>
+        <Reveal x={-50} y={0}>
           <Link href={"/"}>
             <Image src="/assist-xpert-logo.svg" width={64} height={20} alt="" />
           </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
           {siteConfig.mainNav.map((item, index) => {
             return (
               <li key={index}>
-                <Reveal delay={0.25 + index * 0.1}>
+                <Reveal delay={index * 0.1}>
                   {item.submenu ? (
                     <div className="text-white/60 hover:text-white group/item transition py-1 duration-200 uppercase tracking-wider inline cursor-pointer">
                       {" "}
@@ -85,7 +85,7 @@ const Navbar = () => {
         <Reveal
           x={50}
           y={0}
-          delay={0.65}
+          delay={0.45}
           className="flex items-center gap-5 justify-self-end col-span-2 lg:col-span-1"
         >
           <Linkbtn href="/contact">Lets Talk</Linkbtn>

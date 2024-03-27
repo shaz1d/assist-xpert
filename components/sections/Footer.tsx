@@ -24,11 +24,11 @@ const Footer = () => {
                   Assist Xpert
                 </h2>
               </Reveal>
-              <Reveal delay={0.25}>The Right Hire. Right Now</Reveal>
-              <Reveal delay={0.35}>
+              <Reveal delay={0.15}>The Right Hire. Right Now</Reveal>
+              <Reveal delay={0.25}>
                 Virtual Assistants. Accounting Services. Social Media Managers.
               </Reveal>
-              <Reveal delay={0.45}>
+              <Reveal delay={0.35}>
                 Made with ♥ from the Assist Xpert team.
               </Reveal>
             </div>
@@ -36,7 +36,7 @@ const Footer = () => {
               {footerGroups.map((item, index) => {
                 return (
                   <div key={index}>
-                    <Reveal delay={0.25 + index * 0.1}>
+                    <Reveal delay={index * 0.1}>
                       <h2 className=" font-medium mb-4 text-xl">
                         {item.title}
                       </h2>
@@ -45,7 +45,7 @@ const Footer = () => {
                       {item.links.map((link, i) => {
                         return (
                           <li key={i}>
-                            <Reveal delay={0.35 + i * 0.1}>
+                            <Reveal delay={i * 0.1}>
                               <Link
                                 href={link.link}
                                 className=" p-1 transition-colors duration-200 hover:text-gray-500"

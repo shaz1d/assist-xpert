@@ -43,16 +43,10 @@ const Navbar = () => {
             return (
               <li key={index}>
                 <Reveal delay={0.25 + index * 0.1}>
-                  <Link
-                    className={cn(
-                      "hover:text-white group/item transition py-1 duration-200 uppercase tracking-wider",
-                      pathname === item.path ? "text-white" : "text-white/60"
-                    )}
-                    href={item.path ? item.path : ""}
-                  >
-                    {item.name}
-
-                    {item.submenu && (
+                  {item.submenu ? (
+                    <div className="text-white/60 hover:text-white group/item transition py-1 duration-200 uppercase tracking-wider inline cursor-pointer">
+                      {" "}
+                      <span>{item.name}</span>
                       <div className="absolute transition duration-500 top-10 left-1/2 -translate-x-1/2 invisible group-hover/item:visible opacity-0 group-hover/item:opacity-100 -translate-y-10 group-hover/item:translate-y-0 pt-5">
                         <ul className=" w-max  grid grid-cols-4 gap-4 bg-white p-4 rounded-lg">
                           {item.submenu.map((subItem, index) => (
@@ -71,8 +65,18 @@ const Navbar = () => {
                           ))}
                         </ul>
                       </div>
-                    )}
-                  </Link>
+                    </div>
+                  ) : (
+                    <Link
+                      className={cn(
+                        "hover:text-white group/item transition py-1 duration-200 uppercase tracking-wider",
+                        pathname === item.path ? "text-white" : "text-white/60"
+                      )}
+                      href={item.path ? item.path : ""}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
                 </Reveal>
               </li>
             );
